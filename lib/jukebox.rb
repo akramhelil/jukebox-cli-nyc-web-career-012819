@@ -59,7 +59,7 @@ end
 def run(songs)
   while input
   puts "Please enter a command:"
-  input = gets.chomp()
+  input = gets.downcase.strip
     case input
   when "help"
     help
