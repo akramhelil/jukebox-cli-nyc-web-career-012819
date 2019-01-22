@@ -57,19 +57,22 @@ end
 
 
 def run(songs)
-while input
+  while input
   puts "Please enter a command:"
   input = gets.chomp()
-if input == "help"
-  help
-elsif input == "list"
-  list
-elsif input == "play"
-  list(songs)
-  play(songs)
-elsif input == "exit"
-  exit_jukebox
-else
-  help
-end
+    case input
+  when "help"
+    help
+  when "list"
+    list
+  when "play"
+    list(songs)
+    play(songs)
+  when "exit"
+    exit_jukebox
+      break
+    else
+      help
+    end
+  end
 end
