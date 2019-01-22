@@ -44,11 +44,12 @@ if (1..9).to_a.include?(song_to_play.to.i)
   puts "Playing #{songs[song_to_play.to_i - 1]}"
 elsif song.include?(song_to_play)
   puts "Playing #{song_to_play}"
+  binding.pry
 else
   puts "Invalid input, please try again"
 end
 end
-binding.pry
+
 
 def exit_jukebox
 puts "Goodbye"
