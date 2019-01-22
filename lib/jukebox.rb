@@ -1,3 +1,5 @@
+require 'pry'
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -46,7 +48,7 @@ else
   puts "Invalid input, please try again"
 end
 end
-
+binding.pry
 
 def exit_jukebox
 puts "Goodbye"
