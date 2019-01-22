@@ -57,5 +57,8 @@ elsif input == "play"
   play
 elsif input == "exit"
   exit_jukebox
+  break
+else
+  help
 end
 end
