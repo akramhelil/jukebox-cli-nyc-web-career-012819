@@ -57,8 +57,9 @@ end
 
 
 def run(songs)
-puts "Please enter a command:"
-input = gets.chomp()
+while input
+  puts "Please enter a command:"
+  input = gets.chomp()
 if input == "help"
   help
 elsif input == "list"
