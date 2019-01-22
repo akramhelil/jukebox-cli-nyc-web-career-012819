@@ -46,10 +46,8 @@ end
 
 
 
-def run
-puts help
+def run(help)
 puts "Please enter a command:"
-
 input = gets.chomp()
 if input == "help"
   help
