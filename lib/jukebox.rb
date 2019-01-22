@@ -43,10 +43,19 @@ def exit_jukebox
 end
 
 
-def exit_jukebox
-
-end
 
 def run
+puts help
+puts "Please enter a command:"
 
+input = gets.chomp()
+if input == "help"
+  help
+elsif input == "list"
+  list
+elsif input == "play"
+  play
+elsif input == "exit"
+  exit_jukebox
+end
 end
